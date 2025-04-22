@@ -69,7 +69,7 @@ section nav{
     margin-bottom: 0;
     padding: 20px 10px 0;
     position: relative;
-    display: block;
+    display: flex;
 }
 
 section nav div{
@@ -78,20 +78,22 @@ section nav div{
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: row;
 }
 
 section nav div .SVG{
-    width: 24px;
+    width: 40%;
     height: 24px;
     display: inline;
+    margin-right: 50px;
 }
 section nav div .logo{
-    width: 60px !important;
+    width: 50% !important;
     height: 60px !important;
     display: block;
     margin: 0 auto;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 section nav div .menu{
@@ -103,6 +105,10 @@ section nav div .menu{
     position: relative;
     top: -50px;
 }
+section nav div .SIGNIN{
+    width: 10%;
+}
+
 
 section nav div .menu ul{
     width: 100%;

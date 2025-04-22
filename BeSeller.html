@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/CSS/Main-Seller.css">
-    <link rel="shortcut icon" href="./assets/icons/favicon.ico">
+    <link rel="shortcut icon" href="./Assets/Icons/favicon.ico">
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
     <title>azki | سامانه بازاریابان</title>
@@ -398,33 +398,19 @@
                         <h5>همکاران ما در رابطه با ازکی سلر چه می‌گویند؟</h5>
                     </div>
                     <div class="left">
-                        <div id="carouselExampleControls" class="carousel slide">
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                 <iframe src="./assets/video/story1.mp4" frameborder="0"></iframe>
-                                 <!-- <video  width="600" height="300" autoplay muted>
-                                  <source src="./assets/video/story1.mp4" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                 </video> -->
-                              </div>
-                              <div class="carousel-item">
-                                <iframe src="./assets/video/story2.mp4" frameborder="0"></iframe>
-                                <!-- <video  width="600" height="300" autoplay muted>
-                                  <source src="./assets/video/story2.mp4" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                 </video> -->
-                              </div>
-                              
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
+                      <div class="swiper film">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <iframe src="./Assets/Videos/intro-1.mp4" frameborder="0"></iframe>
                           </div>
+                          <div class="swiper-slide">
+                            <iframe src="./Assets/Videos/intro-2.mp4" frameborder="0"></iframe>
+                          </div>
+                          
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -662,10 +648,10 @@
                 <div>
                     <div class="icons">
                         <div class="icon">
-                            <div class="photo"><img src="./assets/images/samandehi.webp" alt=""></div>
-                            <div class="photo"><img src="./assets/images/markazi.webp" alt=""></div>
-                            <div class="photo"><img src="./assets/images/new-enamad.png" alt=""></div>
-                            <div class="photo"><img src="./assets/images/work.webp" alt=""></div>
+                            <div class="photo"><img src="./Assets/Images/samandehi.webp" alt=""></div>
+                            <div class="photo"><img src="./Assets/Images/markazi.webp" alt=""></div>
+                            <div class="photo"><img src="./Assets/Images/new-enamad.png" alt=""></div>
+                            <div class="photo"><img src="./Assets/Images/work.webp" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -714,6 +700,14 @@
       },
         });
       </script> 
+      <script>
+        var swiper = new Swiper(".film", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 
      
 </body>

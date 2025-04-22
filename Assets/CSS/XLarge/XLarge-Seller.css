@@ -38,6 +38,12 @@ section nav div{
     display: block;
 }
 
+section nav div .SIGNIN{
+    display: none;
+}
+section nav div .SVG{
+    display: none;
+}
 section nav div .logo{
     width: 57px;
     height: 57px;

@@ -37,6 +37,12 @@ section nav div{
     position: relative;
     display: block;
 }
+section nav div .SIGNIN{
+    display: none;
+}
+section nav div .SVG{
+    display: none;
+}
 
 section nav div .logo{
     width: 57px;
@@ -474,12 +480,14 @@ section .story div .inside .right h5{
 }
 
 section .story div .inside .left{
+    width: 40%;
     height: 479px;
     flex-basis: 50%;
     flex-grow: 0;
     display: block;
     padding: 0;
 }
+section .story div .inside .left 
 
 /* question */
 section .questions{
