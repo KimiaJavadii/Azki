@@ -2252,7 +2252,7 @@ div.bottom-menu{
     flex-direction: row;
     background-color: white;
     position: fixed;
-    top: 95.8%;
+    top: 95%;
     z-index: 10001;
 }
 div.bottom-menu>a{
@@ -2271,6 +2271,9 @@ div.bottom-menu>a>p{
     font-size: 11px;
     color: #747576;
    text-align: center;
+}
+main>div.car-button{
+    display: none;
 }
 
 

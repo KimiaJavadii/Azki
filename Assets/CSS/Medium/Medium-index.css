@@ -2182,13 +2182,21 @@ div.container-sixteenth>div.bottom>div.information>div.button>button{
 div.container-sixteenth>div.bottom>div.information>div.button>button:hover{
     cursor: pointer;
 }
+
+main>div.car-button{
+    display: none;
+}
+
+ 
+
+
 div.bottom-menu{
     width: 100%;
     display: flex;
     flex-direction: row;
     background-color: white;
     position: fixed;
-    top: 95.8%;
+    top: 95%;
     z-index: 10001;
 }
 div.bottom-menu>a{

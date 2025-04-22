@@ -1986,7 +1986,66 @@ div.bottom-menu{
 /* end sixteenth container */
 
 
+main>div.car-button{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    bottom: 15px;
+    z-index: 999;
+    left: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 1px 5px 0 rgba(74, 74, 74, .2), 0 2px 2px 0 rgba(74, 74, 74, .1), 0 3px 1px -2px rgba(74, 74, 74, .1);
+    cursor: pointer;
+}
 
+ main>div.car-button>span.load{
+    width: 90px;
+    height: 90px;
+    border-width: 2px;
+    border-style: dashed solid  solid dotted;
+    border-color: gray gray transparent gray;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: spin 4s linear infinite;
+  }
+   main>div.car-button>span.load::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 10px;
+    top: 31px;
+    border: 10px solid transparent;
+    border-right-color: gray;
+    transform: spin(-40deg);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  
+  main>div.car-button>div{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    position: relative;
+    bottom: 97%;
+    right: 10%;
+  }
+
+main>div.car-button>div>svg{
+    position: fixed;
+    left: 3.4%;
+    bottom: 4.7%;
+}
 
 
 
